@@ -1,7 +1,7 @@
 import {createStore} from "redux";
 import drumReducer from "../src/reducers";
 
-function configureStore(state = { display: "none" }) {
+function configureStore(state = { displayMessage: "none" }) {
   return createStore(drumReducer,state);
 }
 export default configureStore;

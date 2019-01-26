@@ -3,7 +3,7 @@ export default (state, action) => {
       case "booom":
         return {
           ...state,
-          display: action.payload
+          displayMessage: action.payload
         };
       default:
         return state;

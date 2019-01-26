@@ -1,6 +1,6 @@
 const displayAction = (payload) => {
     return {
-      type: "boom",
+      type: "booom",
       payload
     }
   }
