@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux";
 import displayAction from "./action/displayAction";
-import Display from "./componetns/display/display"
+import Display from "./componetns/display/display";
+import DrumPanel from "./componetns/drumPanel/drumPanel"
 class App extends Component {
   render() {
     return (
       <div id="drum-machine">
-        <div id="display">Name of instrument</div>
-        <Display displayMessage={this.state.displayMessage} />
-        <div id="drum" />
+      <h1>Drum machine for FCC</h1>
+        <Display instrument={this.props.displayMessage} />
+     <DrumPanel /> 
       </div>
     );
   }

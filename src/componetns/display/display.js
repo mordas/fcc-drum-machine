@@ -1,9 +1,9 @@
 import React from "react";
 
 const Display = (props) => {
-   return ( <h1>
-    {props.displayMessage}
-</h1>)
+   return ( <div id="display"> <h1>
+    {props.instrument}
+</h1></div>)
 }
 
 export default Display;
