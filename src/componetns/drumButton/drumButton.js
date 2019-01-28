@@ -1,12 +1,15 @@
 import React from 'react';
 import {bankOne, bankTwo} from '../../data/data';
+import displayAction from '../../action/displayAction'
 
 class DrumButton extends React.Component {
     render () {
     return (
-<div>
+<div
+onClick={()=>dispatch(displayAction('abc')) 
+}>
 <p>{this.props.keyTrigger}</p>
-<audio></audio>
+<audio>{this.props.url}</audio>
 </div>
     )
 

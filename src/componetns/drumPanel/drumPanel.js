@@ -6,6 +6,7 @@ import DrumButton from "../drumButton/drumButton";
 const DrumPanel = () =>{ return ( bankOne.map((i) => 
               <DrumButton
                 keyTrigger={i.keyTrigger}
+                url={i.url}
                 />
 )
         );}
